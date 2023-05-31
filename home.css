@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-image: url('https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Bg-page.png?csf=1&web=1&e=KgwSMP');
+    background-size: cover;
+}
+
+.ms-3 {
+    margin-right: 2em;
+    font-size: 1em;
+}
+
+.btn-group {
+    background-color: #D2F3F6;
+}
+
+.navbar {
+    background-color: #EAFDFC;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    margin-right: 4em;
+}
+
+.nav-link:hover {
+    opacity: 80%;
+}
+
+.card {
+    background-color: #D2F3F6;
+}
