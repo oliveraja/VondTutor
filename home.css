@@ -7,36 +7,52 @@ body {
 }
 
 @media (max-width: 576px) {
-    #navbarSupportedContent {
-        font-size: 13px;
+    .h2 {
+        font-size: 1rem;
     }
 
-    #h4 {
-        font-size: 1em;
+    .h4 {
+        font-size: 0.8rem;
     }
 
-    #user_img {
-        width: 500px;
-        justify-content: center;
+    .h5 {
+        font-size: 0.7rem;
+    }
+
+    .h6 {
+        font-size: 0.6rem;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    .profile-btn {
+        font-size: small;
     }
 }
 
-.ms-3 {
-    margin-right: 2em;
-    font-size: 1em;
-}
-
-.btn-group {
-    background-color: #D2F3F6;
+@media (max-width: 768px) {
+    .profile-btn {
+        width: 60%;
+    }
 }
 
 .navbar {
     background-color: #EAFDFC;
 }
 
-.navbar-brand {
-    font-size: 24px;
-    margin-right: 4em;
+.btn-group {
+    background-color: #D2F3F6;
+}
+
+.search {
+    margin-right: 2em;
+    font-size: 1em;
+}
+
+.navigation {
+    font-size: 12px;
 }
 
 .nav-link:hover {
@@ -47,23 +63,45 @@ body {
     background-color: #EAFDFC;
 }
 
-.h4 {
-    font-size: 2em;
+.breadcrumb {
+    margin-top: 5rem;
 }
 
-.profile_box {
+.content {
+    margin-bottom: 2rem;
+}
+
+.content-bg {
     background-color: #D2F3F6;
-    width: 95%;
 }
 
-.h4 {
-    margin: 1.5em;
+.image {
+    width: 100%;
 }
 
-.edit_motivation {
+.edit-motivation {
     color: grey;
 }
 
-.edit_motivation:hover {
+.edit-motivation:hover {
     color: black;
+}
+
+.profile-btn {
+    width: 93%;
+    background-color: #82AAE3;
+    color: #fff;
+}
+
+.profile-btn:hover {
+    background-color: #92B5E8;
+    color: #fff;
+}
+
+.card-bg {
+    background-color: #91D8E4;
+}
+
+.card {
+    width: 100%;
 }
