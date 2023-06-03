@@ -55,8 +55,17 @@ body {
     font-size: 12px;
 }
 
-.nav-link:hover {
+.header-btn {
+    border: 0;
+}
+
+.header-btn:hover {
     opacity: 80%;
+}
+
+.nav2:hover {
+    background-color: #82AAE3;
+    border-radius: 2cm;
 }
 
 .list-group-item {
