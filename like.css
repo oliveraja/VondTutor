@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-image: url('https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Bg-page.png?csf=1&web=1&e=KgwSMP');
+    background-size: cover;
+}
+
+@media (max-width: 576px) {
+    .h4 {
+        font-size: 0.8rem;
+    }
+
+    .h5 {
+        font-size: 0.7rem;
+    }
+
+    hr {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .search {
+        font-size: 12px;
+    }
+}
+
+.navbar {
+    background-color: #EAFDFC;
+}
+
+.btn-group {
+    background-color: #D2F3F6;
+}
+
+.search {
+    margin-right: 2em;
+    font-size: 1em;
+}
+
+.navigation {
+    font-size: 12px;
+}
+
+select {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.header-btn {
+    border: 0;
+}
+
+.header-btn:hover {
+    opacity: 80%;
+}
+
+.nav2:hover {
+    background-color: #82AAE3;
+    border-radius: 2cm;
+}
+
+.list-group-item {
+    background-color: #EAFDFC;
+}
+
+.breadcrumb {
+    margin-top: 5rem;
+}
+
+.bread-nav:hover {
+    color: #82AAE3;
+}
+
+.card-bg {
+    background-color: #91D8E4;
+}
+
+.content {
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+}
