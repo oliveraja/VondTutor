@@ -6,6 +6,25 @@ body {
     background-size: cover;
 }
 
+@media (max-width: 576px) {
+    .h4 {
+        font-size: 0.8rem;
+    }
+
+    .h5 {
+        font-size: 0.7rem;
+    }
+
+    hr {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .search {
+        font-size: 12px;
+    }
+}
 
 .navbar {
     background-color: #EAFDFC;
@@ -23,6 +42,12 @@ body {
 
 .navigation {
     font-size: 12px;
+}
+
+select {
+    outline: none;
+    border: none;
+    background: transparent;
 }
 
 .header-btn {

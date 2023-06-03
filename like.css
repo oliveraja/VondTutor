@@ -18,9 +18,11 @@ body {
     hr {
         margin: 0;
     }
+}
 
-    .profile-btn {
-        font-size: small;
+@media (max-width: 768px) {
+    .search {
+        font-size: 12px;
     }
 }
 
