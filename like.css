@@ -41,6 +41,12 @@ body {
     font-size: 12px;
 }
 
+select {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
 .header-btn {
     border: 0;
 }

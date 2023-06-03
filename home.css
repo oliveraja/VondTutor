@@ -36,6 +36,10 @@ body {
     .profile-btn {
         width: 60%;
     }
+
+    .search {
+        font-size: 12px;
+    }
 }
 
 .navbar {
@@ -53,6 +57,12 @@ body {
 
 .navigation {
     font-size: 12px;
+}
+
+select {
+    outline: none;
+    border: none;
+    background: transparent;
 }
 
 .header-btn {
