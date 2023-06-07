@@ -14,10 +14,6 @@ body {
     .h5 {
         font-size: 0.7rem;
     }
-
-    hr {
-        margin: 0;
-    }
 }
 
 @media (max-width: 768px) {
@@ -33,7 +29,6 @@ body {
 .btn-group {
     background-color: #D2F3F6;
 }
-
 
 .search {
     margin-right: 2em;
@@ -73,8 +68,4 @@ select {
 
 .bread-nav:hover {
     color: #82AAE3;
-}
-
-svg {
-    width: 10%
 }

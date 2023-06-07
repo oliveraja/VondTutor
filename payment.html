@@ -15,7 +15,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
     <!--Include Css-->
-    <link rel="stylesheet" href="like.css">
+    <link rel="stylesheet" href="payment.css">
 
 </head>
 
@@ -127,40 +127,71 @@
     <section class="container-fluid mx-lg-4 d-sm-center">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <a class="breadcrumb-item nav-link bread-nav" aria-current="page" href=home.html>Halaman utama</a>
-                <li class="breadcrumb-item active disable" aria-current="page">Guru yang disukai</li>
+                <a class="breadcrumb-item nav-link bread-nav" aria-current="page" href="home.html">Halaman utama</a>
+                <a class="breadcrumb-item nav-link bread-nav" aria-current="page" href="info_akun.html">Info akun</a>
+                <a class="breadcrumb-item nav-link bread-nav" aria-current="page" href="transaction.html">Detail
+                    transaksi</a>
+                <li class="breadcrumb-item active disable" aria-current="page">Pembayaran</li>
             </ol>
         </nav>
     </section>
 
-    <!--content-->
-    <div class="content-bg d-lg-flex d-flex mx-lg-2 mx-0 pt-lg-4 pt-2">
-        <div class="card mx-lg-4 mx-2 d-lg-flex rounded-4">
-            <div class="card-bg p-lg-4 p-2 d-flex flex-row mb-0 rounded-4">
-                <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Jorgy.png?csf=1&web=1&e=zYQmPE"
-                    alt="" class="col-lg-2 col-6 pe-4">
-                <div class="col-8">
-                    <p class="h4 fw-bolder my-1">Bahasa Inggris</p>
-                    <hr class="my-1 w-75">
-                    <p class="h5 my-1">Mr. Jorgy Ferdinand</p>
-                </div>
-            </div>
+    <!--Content-->
+    <div class="mx-lg-4 mx-2">
+        <pre class="h4 mb-2">Tanggal        : 14-03-2023</pre>
+        <pre class="h4 mb-2">Jam            : 14.57 WIB</pre>
+        <pre class="h4 mb-2">Order ID       : ING-68573N78G4</pre>
+        <p class="h4 mb-2">Metode pembayaran</p>
+
+        <!--BCA M-Banking-->
+        <div class="dropdown mb-2">
+            <button class="btn dropdown-toggle button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dengan BCA M-Banking
+            </button>
+            <p class="h4 dropdown-menu p-4 text-center">
+                Nomor Virtual Account
+                <br>
+                <span class="nav-link">56677843</span>
+            </p>
+        </div>
+
+        <!--Mandiri M-Banking-->
+        <div class="dropdown mb-2">
+            <button class="btn dropdown-toggle button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dengan Mandiri M-Banking
+            </button>
+            <p class="h4 dropdown-menu p-4 text-center">
+                Nomor Virtual Account
+                <br>
+                <span class="nav-link">56627843</span>
+            </p>
+        </div>
+
+        <!--Ovo-->
+        <div class="dropdown mb-2">
+            <button class="btn dropdown-toggle button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dengan OVO
+            </button>
+            <p class="h4 dropdown-menu p-4 text-center">
+                Nomor Virtual Account
+                <br>
+                <span class="nav-link">566-[nomor_telepon]</span>
+            </p>
+        </div>
+
+        <!--Gopay-->
+        <div class="dropdown mb-2">
+            <button class="btn dropdown-toggle button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dengan Gopay
+            </button>
+            <p class="h4 dropdown-menu p-4 text-center">
+                Nomor Virtual Account
+                <br>
+                <span class="nav-link">566-[nomor_telepon]</span>
+            </p>
         </div>
     </div>
 
-    <div class="content-bg d-lg-flex d-flex mx-lg-2 mx-0 pt-lg-4 pt-2">
-        <div class="card mx-lg-4 mx-2 d-lg-flex rounded-4">
-            <div class="card-bg p-lg-4 p-2 d-flex flex-row mb-0 rounded-4">
-                <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Jorgy.png?csf=1&web=1&e=zYQmPE"
-                    alt="" class="col-lg-2 col-6 pe-4">
-                <div class="col-8">
-                    <p class="h4 fw-bolder my-1">Bahasa Inggris</p>
-                    <hr class="my-1 w-75">
-                    <p class="h5 my-1">Mr. Jorgy Ferdinand</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!--Include bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
