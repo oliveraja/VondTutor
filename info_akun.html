@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOND TUTOR</title>
+
+    <!--Include Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!--Include Font-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!--Include Css-->
+    <link rel="stylesheet" href="info_akun.css">
+
+</head>
+
+<body>
+    <!--Header-->
+    <nav class="navbar navbar-expand-lg fixed-top py-0">
+        <div class="container-fluid justify-content-between">
+            <!--Judul-->
+            <p class="h1 navbar-brand mx-lg-4 fw-bolder">VOND<br>TUTOR</p>
+
+            <!--Burger button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarScroll" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+
+                <!--Search-->
+                <div class="btn-group rounded-pill">
+                    <span class="search ms-3 mt-3 d-none d-lg-block">Subjek apa yang ingin anda pelajari?</span>
+
+                    <!--Search onclick-->
+                    <div class="input-group ps-2 py-2 d-none">
+                        <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Book.png?csf=1&web=1&e=1z1k4T"
+                            alt="">
+                        <select class="form-select-sm p-0 m-0" aria-label="Default select example">
+                            <option selected>Subjek</option>
+                            <option value="1">Bahasa Inggris</option>
+                            <option value="2">Bahasa Jepang</option>
+                            <option value="3">Bahasa Korea</option>
+                            <option value="4">Geografi</option>
+                        </select>
+                        <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Location.png?csf=1&web=1&e=z0gSLZ"
+                            alt="">
+                        <select class="form-select-sm p-0 m-0" aria-label="Default select example">
+                            <option selected>Lokasi</option>
+                            <option value="1">Di sekitar saya</option>
+                            <option value="2">Online</option>
+                        </select>
+                    </div>
+
+                    <!--Search button-->
+                    <a href="#" class="btn mod-btn d-none d-lg-block">
+                        <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Search.png?csf=1&web=1&e=eO4REr"
+                            alt="">
+                    </a>
+                </div>
+
+                <!--Search (untuk tablet & mobile)-->
+                <div class="btn-group rounded-pill d-lg-none">
+                    <span class="navigation search ms-3 mt-3">Subjek apa yang ingin anda pelajari?</span>
+                    <a href="#" class="btn mod-btn">
+                        <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Search.png?csf=1&web=1&e=eO4REr"
+                            alt="">
+                    </a>
+                </div>
+
+                <!--Menu navigasi-->
+                <ul class="nav justify-content">
+
+                    <!--Pesan-->
+                    <li class="nav-item">
+                        <a class="mod-btn nav-link d-none d-lg-block" href="message.html">
+                            <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Msg.png?csf=1&web=1&e=phuLoM"
+                                alt="A" class="img-fluid">
+                        </a>
+                    </li>
+
+                    <!--Love-->
+                    <li class="nav-item">
+                        <a class="mod-btn nav-link d-none d-lg-block" href="like.html">
+                            <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Love.png?csf=1&web=1&e=0w3lap"
+                                alt="B" class="img-fluid">
+                        </a>
+                    </li>
+
+                    <!--Info-->
+                    <li class="nav-item">
+                        <a class="mod-btn nav-link d-none d-lg-block" href="info.html">
+                            <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Info.png?csf=1&web=1&e=bksExf"
+                                alt="C" class="img-fluid">
+                        </a>
+                    </li>
+
+                    <!--Akun-->
+                    <li class="nav-item">
+                        <a class="mod-btn nav-link d-none d-lg-block" href="#">
+                            <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/LogOut.png?csf=1&web=1&e=znqOFL"
+                                alt="D" class="img-fluid">
+                        </a>
+                    </li>
+                </ul>
+
+                <!--Menu navigasi (untuk tablet & mobile)-->
+                <ul class="navigation list-group list-group-flush d-lg-none d-flex">
+                    <a href="message.html" class="nav2 list-group-item nav-link">Pesan</a>
+                    <a href="like.html" class="nav2 list-group-item nav-link">Guru yang disukai</a>
+                    <a href="info.html" class="nav2 list-group-item nav-link">Info</a>
+                    <a href="" class="nav2 list-group-item nav-link">Akun saya</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container-fluid mx-lg-4 d-sm-center">
+        <!--Penanda halaman-->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <a class="breadcrumb-item nav-link bread-nav" aria-current="page" href="home.html">Halaman Utama</a>
+                <li class="breadcrumb-item disable" aria-current="page">Info akun</li>
+            </ol>
+        </nav>
+    </section>
+
+    <!--Content-->
+    <div class="container-fluid">
+        <div class="row gx-lg-4 gx-0 gy-md-2">
+            <div class="col-lg-4 col-12 ps-lg-4">
+                <!--Profile-->
+                <div class="profile">
+                    <div class="content-bg">
+                        <p class="h4 ps-4 pt-4">Foto profil</p>
+                        <!--Foto Profil-->
+                        <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/camera.png?csf=1&web=1&e=0jC81O"
+                            alt="" class="camera position-absolute btn mod-btn" id="camera">
+
+                        <!--Camera-->
+                        <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Roland.png?csf=1&web=1&e=6oY2Ee"
+                            alt="" class="image p-4 w-100">
+                    </div>
+                </div>
+                <br>
+
+                <!--Ubah kata sandi-->
+                <div class="change-password d-none d-lg-block">
+                    <div class="content-bg">
+                        <p class="h4 pt-4 ps-4">Ubah kata sandi</p>
+                        <div class="text-center mx-4">
+                            <button class="btn button mod-btn w-100" data-bs-toggle="modal"
+                                data-bs-target="#change-password" data-bs-whatever=" ">Ubah kata sandi</button>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <!--Informasi umum-->
+            <div class="col-lg-8 col-12 pe-lg-4">
+                <div class="content-bg px-4">
+                    <p class="h4 pt-4 mb-4">Informasi umum</p>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Nama depan"
+                            value="Timothy">
+                        <label for="floatingInput">Nama depan</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Nama belakang"
+                            value="Roland">
+                        <label for="floatingInput">Nama belakang</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="floatingInput" placeholder="Tanggal lahir"
+                            value="06/27/2023">
+                        <label for="floatingInput">Tanggal Lahir</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" aria-label="Default select example" id="floatingInput">
+                            <option selected value="1">Laki-laki</option>
+                            <option value="2">Perempuan</option>
+                        </select>
+                        <label for="floatingInput">Jenis kelamin</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Email"
+                            value="rolandTimothy80rb@gmail.com">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="Nomor telepon"
+                            value="081277865432">
+                        <label for="floatingInput">Nomor telepon</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Pekerjaan"
+                            value="Siswa">
+                        <label for="floatingInput">Pekerjaan</label>
+                    </div>
+                    <br>
+                    <div class="text-center">
+                        <button class="btn button mod-btn mx-auto">Validasi</button>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <!--Ubah kata sandi (untuk tampilan tablet dan mobile)-->
+            <div class="change-password d-lg-none">
+                <br>
+                <div class="content-bg">
+                    <p class="h4 pt-4 ps-4">Ubah kata sandi</p>
+                    <div class="text-center mx-4">
+                        <button class="btn button mod-btn w-100" data-bs-toggle="modal"
+                            data-bs-target="#change-password" data-bs-whatever=" ">Ubah kata sandi</button>
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <!--Pop-up untuk ganti kata sandi-->
+            <div class="modal fade" id="change-password" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="change-password">Ubah kata sandi</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="old-pw" class="col-form-label">Kata sandi lama:
+                                    </label>
+                                    <input type="password" class="form-control" id="old-pw">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="new-pw" class="col-form-label">Kata sandi baru:
+                                    </label>
+                                    <input type="password" class="form-control" id="new-pw">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirm-pw" class="col-form-label">Konfirmasi kata sandi baru:
+                                    </label>
+                                    <input type="password" class="form-control" id="confirm-pw">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                            <button type="button" class="btn btn-primary">Oke</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!--Daftar pembayaran-->
+    <div class="mx-lg-4 mx-2 content-bg">
+        <p class="h4 ps-4 pt-4">Daftar pembayaran</p>
+        <div class="ps-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Subjek</th>
+                        <th scope="col">Waktu</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Bahasa Inggris</th>
+                        <td>14-03-2023 14.57</td>
+                        <td>Rp95.000</td>
+                        <td>
+                            <a class="row-nav nav-link" href="transaction.html">Menunggu pembayaran</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ekonomi</th>
+                        <td>19-12-2022 12.46</td>
+                        <td>Rp80.000</td>
+                        <td>
+                            <a class="row-nav nav-link" href="transaction.html">Pembayaran berhasil</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+    </div>
+    <br>
+
+    <!--Include Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

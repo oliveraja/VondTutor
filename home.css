@@ -30,15 +30,26 @@ body {
     .profile-btn {
         font-size: small;
     }
+
+    #camera {
+        left: 18rem;
+        top: 28rem;
+        width: 75px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 577px) {
     .profile-btn {
         width: 60%;
     }
 
     .search {
         font-size: 12px;
+    }
+
+    #camera {
+        left: 42rem;
+        top: 54rem;
     }
 }
 
@@ -65,11 +76,11 @@ select {
     background: transparent;
 }
 
-.header-btn {
+.mod-btn {
     border: 0;
 }
 
-.header-btn:hover {
+.mod-btn:hover {
     opacity: 80%;
 }
 
@@ -92,6 +103,12 @@ select {
 
 .content-bg {
     background-color: #D2F3F6;
+}
+
+.camera {
+    left: 35rem;
+    top: 45rem;
+    width: 90px;
 }
 
 .image {

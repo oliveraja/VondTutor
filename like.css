@@ -14,10 +14,6 @@ body {
     .h5 {
         font-size: 0.7rem;
     }
-
-    hr {
-        margin: 0;
-    }
 }
 
 @media (max-width: 768px) {
@@ -49,11 +45,11 @@ select {
     background: transparent;
 }
 
-.header-btn {
+.mod-btn {
     border: 0;
 }
 
-.header-btn:hover {
+.mod-btn:hover {
     opacity: 80%;
 }
 

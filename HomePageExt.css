@@ -1,0 +1,235 @@
+element.style {
+}
+@media screen and (max-width: 330px)
+<style>
+:root {
+    --base-size: 6px!important;
+    --base-h6-font-size: 18px!important;
+    --base-body-font-size: 14px!important;
+    --base-caption-font-size: 13px!important;
+    --base-small-font-size: 11px!important;
+}
+<style>
+#app.dark, :root {
+    --base-contrast-color: var(--base-color-pink);
+}
+<style>
+:root {
+    --base-size: 8px;
+    --base-size-x1: var(--base-size);
+    --base-size-x2: calc(var(--base-size)*2);
+    --base-size-x3: calc(var(--base-size)*3);
+    --base-size-x4: calc(var(--base-size)*4);
+    --base-size-x5: calc(var(--base-size)*5);
+    --base-size-x6: calc(var(--base-size)*6);
+    --base-size-x7: calc(var(--base-size)*7);
+    --base-size-x8: calc(var(--base-size)*8);
+    --base-size-x9: calc(var(--base-size)*9);
+    --base-size-x10: calc(var(--base-size)*10);
+    --base-color-white: #fff;
+    --base-color-black: #121212;
+    --base-color-grey: #a6a6a6;
+    --base-color-grey-medium: #d9d9d9;
+    --base-color-grey-light: #f7f7f7;
+    --base-color-blue: #157dfe;
+    --base-color-blue-medium: #5ba4fe;
+    --base-color-blue-light: #add2ff;
+    --base-color-blue-extra-light: #e8f2ff;
+    --base-color-yellow: #ffcb3f;
+    --base-color-yellow-medium: #ffdb78;
+    --base-color-yellow-light: #ffedbc;
+    --base-color-yellow-extra-light: #fffbf0;
+    --base-color-pink: #ff6363;
+    --base-color-pink-medium: #ff9292;
+    --base-color-pink-light: #ffc8c8;
+    --base-color-pink-extra-light: #fff1f1;
+    --base-color-orange: #ffa25e;
+    --base-color-system-success: #5bca8d;
+    --base-color-system-success-light: #f2fbf6;
+    --base-color-system-warning: #ff3636;
+    --base-font-family: "Buenos Aires","Pulp","OpenSans","Open Sans",sans-serif;
+    --base-h1-font-size: 80px;
+    --base-h2-font-size: 60px;
+    --base-h3-font-size: 40px;
+    --base-h4-font-size: 30px;
+    --base-h5-font-size: 24px;
+    --base-h6-font-size: 20px;
+    --base-body-font-size: 16px;
+    --base-caption-font-size: 14px;
+    --base-small-font-size: 12px;
+    --base-tiny-font-size: 10px;
+    --base-button-xlarge-font-size: var(--base-body-font-size);
+    --base-button-large-font-size: var(--base-body-font-size);
+    --base-button-medium-font-size: var(--base-caption-font-size);
+    --base-button-small-font-size: var(--base-small-font-size);
+    --base-heavy-font-weight: 800;
+    --base-bold-font-weight: bold;
+    --base-medium-font-weight: 600;
+Show All Properties (6 more)
+}
+:root {
+    --trustpilot-text-color: white;
+    --trustpilot-star-dark-bg: #00B67A;
+    --trustpilot-star-light-bg: #DCDCE6;
+}
+@media screen and (max-width: 330px)
+:root {
+    --base-size: 6px !important;
+    --base-h6-font-size: 18px !important;
+    --base-body-font-size: 14px !important;
+    --base-caption-font-size: 13px !important;
+    --base-small-font-size: 11px !important;
+}
+:root {
+    --breakpoint: 980px;
+    --base-size: 8px;
+    --base-size-x1: var(--base-size);
+    --base-size-x2: calc(var(--base-size) * 2);
+    --base-size-x3: calc(var(--base-size) * 3);
+    --base-size-x4: calc(var(--base-size) * 4);
+    --base-size-x5: calc(var(--base-size) * 5);
+    --base-size-x6: calc(var(--base-size) * 6);
+    --base-size-x7: calc(var(--base-size) * 7);
+    --base-size-x8: calc(var(--base-size) * 8);
+    --base-size-x9: calc(var(--base-size) * 9);
+    --base-size-x10: calc(var(--base-size) * 10);
+    --base-color-white: #FFFFFF;
+    --base-color-black: #121212;
+    --base-color-grey: #A6A6A6;
+    --base-color-grey-medium: #D9D9D9;
+    --base-color-grey-light: #F7F7F7;
+    --base-color-blue: #157DFE;
+    --base-color-blue-medium: #5BA4FE;
+    --base-color-blue-light: #ADD2FF;
+    --base-color-blue-extra-light: #E8F2FF;
+    --base-color-yellow: #FFCB3F;
+    --base-color-yellow-medium: #FFDB78;
+    --base-color-yellow-light: #FFEDBC;
+    --base-color-yellow-extra-light: #FFFBF0;
+    --base-color-pink: #FF6363;
+    --base-color-pink-medium: #FF9292;
+    --base-color-pink-light: #FFC8C8;
+    --base-color-pink-extra-light: #FFF1F1;
+    --base-color-orange: #FFA25E;
+    --base-color-system-success: #5BCA8D;
+    --base-color-system-success-light: #F2FBF6;
+    --base-color-system-warning: #FF3636;
+    --base-font-family: 'Buenos Aires', 'OpenSans', 'Open Sans', sans-serif;
+    --base-h1-font-size: 80px;
+    --base-h2-font-size: 60px;
+    --base-h3-font-size: 40px;
+    --base-h4-font-size: 30px;
+    --base-h5-font-size: 24px;
+    --base-h6-font-size: 20px;
+    --base-body-font-size: 16px;
+    --base-caption-font-size: 14px;
+    --base-small-font-size: 12px;
+    --base-tiny-font-size: 10px;
+    --base-button-xlarge-font-size: var(--base-body-font-size);
+    --base-button-large-font-size: var(--base-body-font-size);
+    --base-button-medium-font-size: var(--base-caption-font-size);
+    --base-button-small-font-size: var(--base-small-font-size);
+    --base-heaviest-font-weight: 900;
+    --base-heavy-font-weight: 800;
+Show All Properties (10 more)
+}
+@media screen and (max-width: 330px)
+:root {
+    --base-size: 6px !important;
+    --base-h6-font-size: 18px !important;
+    --base-body-font-size: 14px !important;
+    --base-caption-font-size: 13px !important;
+    --base-small-font-size: 11px !important;
+}
+:root {
+    --breakpoint: 980px;
+    --base-size: 8px;
+    --base-size-x1: var(--base-size);
+    --base-size-x2: calc(var(--base-size) * 2);
+    --base-size-x3: calc(var(--base-size) * 3);
+    --base-size-x4: calc(var(--base-size) * 4);
+    --base-size-x5: calc(var(--base-size) * 5);
+    --base-size-x6: calc(var(--base-size) * 6);
+    --base-size-x7: calc(var(--base-size) * 7);
+    --base-size-x8: calc(var(--base-size) * 8);
+    --base-size-x9: calc(var(--base-size) * 9);
+    --base-size-x10: calc(var(--base-size) * 10);
+    --base-color-white: #FFFFFF;
+    --base-color-black: #121212;
+    --base-color-grey: #A6A6A6;
+    --base-color-grey-medium: #D9D9D9;
+    --base-color-grey-light: #F7F7F7;
+    --base-color-blue: #157DFE;
+    --base-color-blue-medium: #5BA4FE;
+    --base-color-blue-light: #ADD2FF;
+    --base-color-blue-extra-light: #E8F2FF;
+    --base-color-yellow: #FFCB3F;
+    --base-color-yellow-medium: #FFDB78;
+    --base-color-yellow-light: #FFEDBC;
+    --base-color-yellow-extra-light: #FFFBF0;
+    --base-color-pink: #FF6363;
+    --base-color-pink-medium: #FF9292;
+    --base-color-pink-light: #FFC8C8;
+    --base-color-pink-extra-light: #FFF1F1;
+    --base-color-orange: #FFA25E;
+    --base-color-system-success: #5BCA8D;
+    --base-color-system-success-light: #F2FBF6;
+    --base-color-system-warning: #FF3636;
+    --base-font-family: 'Buenos Aires', 'OpenSans', 'Open Sans', sans-serif;
+    --base-h1-font-size: 80px;
+    --base-h2-font-size: 60px;
+    --base-h3-font-size: 40px;
+    --base-h4-font-size: 30px;
+    --base-h5-font-size: 24px;
+    --base-h6-font-size: 20px;
+    --base-body-font-size: 16px;
+    --base-caption-font-size: 14px;
+    --base-small-font-size: 12px;
+    --base-tiny-font-size: 10px;
+    --base-button-xlarge-font-size: var(--base-body-font-size);
+    --base-button-large-font-size: var(--base-body-font-size);
+    --base-button-medium-font-size: var(--base-caption-font-size);
+    --base-button-small-font-size: var(--base-small-font-size);
+    --base-heaviest-font-weight: 900;
+    --base-heavy-font-weight: 800;
+Show All Properties (10 more)
+}
+html {
+    font-size: 62.5%;
+    color: #444;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html[Attributes Style] {
+    -webkit-locale: "id-ID";
+}
+user agent stylesheet
+:root {
+    view-transition-name: root;
+}
+user agent stylesheet
+html {
+    display: block;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}

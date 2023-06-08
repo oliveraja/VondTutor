@@ -18,6 +18,16 @@ body {
     hr {
         margin: 0;
     }
+
+    table {
+        font-size: 0.7rem;
+    }
+
+    #camera {
+        left: 21rem;
+        top: 30rem;
+        width: 75px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -33,7 +43,6 @@ body {
 .btn-group {
     background-color: #D2F3F6;
 }
-
 
 .search {
     margin-right: 2em;
@@ -75,6 +84,26 @@ select {
     color: #82AAE3;
 }
 
-svg {
-    width: 10%
+.content-bg {
+    background-color: #D2F3F6;
+}
+
+.camera {
+    left: 26rem;
+    top: 36rem;
+    width: 90px;
+}
+
+.button {
+    background-color: #82AAE3;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #92B5E8;
+    color: #fff;
+}
+
+.row-nav:hover {
+    color: #82AAE3;
 }

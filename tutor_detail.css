@@ -14,10 +14,6 @@ body {
     .h5 {
         font-size: 0.7rem;
     }
-
-    hr {
-        margin: 0;
-    }
 }
 
 @media (max-width: 768px) {
@@ -33,7 +29,6 @@ body {
 .btn-group {
     background-color: #D2F3F6;
 }
-
 
 .search {
     margin-right: 2em;
@@ -75,6 +70,16 @@ select {
     color: #82AAE3;
 }
 
-svg {
-    width: 10%
+.content-bg {
+    background-color: #91D8E4;
+}
+
+.button {
+    background-color: #82AAE3;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #92B5E8;
+    color: #fff;
 }

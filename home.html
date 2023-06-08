@@ -16,6 +16,7 @@
 
     <!--Include Css-->
     <link rel="stylesheet" href="home.css">
+
 </head>
 
 <body>
@@ -60,7 +61,7 @@
                     </div>
 
                     <!--Search button-->
-                    <a href="#" class="btn d-none d-lg-block">
+                    <a href="#" class="btn mod-btn d-none d-lg-block">
                         <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Search.png?csf=1&web=1&e=eO4REr"
                             alt="">
                     </a>
@@ -69,7 +70,7 @@
                 <!--Search (untuk tablet & mobile)-->
                 <div class="btn-group rounded-pill d-lg-none">
                     <span class="navigation search ms-3 mt-3">Subjek apa yang ingin anda pelajari?</span>
-                    <a href="#" class="btn header-btn">
+                    <a href="#" class="btn mod-btn">
                         <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Search.png?csf=1&web=1&e=eO4REr"
                             alt="">
                     </a>
@@ -80,7 +81,7 @@
 
                     <!--Pesan-->
                     <li class="nav-item">
-                        <a class="header-btn nav-link d-none d-lg-block" href="message.html">
+                        <a class="mod-btn nav-link d-none d-lg-block" href="message.html">
                             <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Msg.png?csf=1&web=1&e=phuLoM"
                                 alt="A" class="img-fluid">
                         </a>
@@ -88,7 +89,7 @@
 
                     <!--Love-->
                     <li class="nav-item">
-                        <a class="header-btn nav-link d-none d-lg-block" href="like.html">
+                        <a class="mod-btn nav-link d-none d-lg-block" href="like.html">
                             <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Love.png?csf=1&web=1&e=0w3lap"
                                 alt="B" class="img-fluid">
                         </a>
@@ -96,7 +97,7 @@
 
                     <!--Info-->
                     <li class="nav-item">
-                        <a class="header-btn nav-link d-none d-lg-block" href="info.html">
+                        <a class="mod-btn nav-link d-none d-lg-block" href="info.html">
                             <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Info.png?csf=1&web=1&e=bksExf"
                                 alt="C" class="img-fluid">
                         </a>
@@ -104,9 +105,9 @@
 
                     <!--Akun-->
                     <li class="nav-item">
-                        <a class="header-btn nav-link d-none d-lg-block" href="#">
-                            <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/User.png?csf=1&web=1&e=fhILV3"
-                                alt="C" class="img-fluid">
+                        <a class="mod-btn nav-link d-none d-lg-block" href="#">
+                            <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/LogOut.png?csf=1&web=1&e=znqOFL"
+                                alt="D" class="img-fluid">
                         </a>
                     </li>
                 </ul>
@@ -138,14 +139,17 @@
     <div class="content-bg d-lg-flex mx-lg-4 mx-2">
         <div class="col-lg-5 text-center">
             <!--Foto profil-->
+            <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/camera.png?csf=1&web=1&e=0jC81O"
+                alt="" class="camera position-absolute btn mod-btn" id="camera">
+
+            <!--Camera-->
             <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Roland.png?csf=1&web=1&e=6oY2Ee"
                 alt="" class="image pt-4 ps-4 pe-4 pb-2">
 
-            <!--Tombol verifikasi dan akun saya-->
-            <button type="button" class="profile-btn btn mb-2 d-none d-lg-inline">Verifikasi
-                Profil</button>
-            <button type="button" class="profile-btn btn mb-2 d-none d-lg-inline">Akun
-                Saya</button>
+            <!--Tombol info akun-->
+            <button type="button" class="profile-btn btn mb-2 d-none d-lg-inline"><a href="info_akun.html"
+                    class="nav-link">Info
+                    Akun</a></button>
         </div>
 
         <div class="col-lg-7 ps-md-4 ps-4 ">
@@ -162,17 +166,39 @@
             <div class="d-flex justify-content-start">
                 <p class="h2 fw-bolder">Motivasi </p>
                 <div class="h2">|</div>
-                <p class="edit-motivation h2"> Edit motivasi</p>
+                <p class="edit-motivation h2" data-bs-toggle="modal" data-bs-target="#pop-up"
+                    data-bs-whatever="@Mau masuk UI/BINUS"> Edit motivasi</p>
+                <div class="modal fade" id="pop-up" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="pop-up">Edit Motivasi</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="new-motivation" class="col-form-label">Motivasi Baru:</label>
+                                        <textarea class="form-control" id="new-motivation"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                <button type="button" class="btn btn-primary">Oke</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <p class="h4 mb-lg-5 mb-3">Mau masuk UI/Binus</p>
         </div>
 
         <!--Tombol verifikasi dan akun saya (untuk tablet & mobile)-->
         <div class="col-lg-5 d-lg-none d-flex justify-content-center">
-            <button type="button" class="profile-btn btn mb-2 mx-2">Verifikasi
-                Profil</button>
-            <button type="button" class="profile-btn btn mb-2 mx-2">Akun
-                Saya</button>
+            <button type="button" class="profile-btn btn mb-2 mx-2">Info Akun</button>
         </div>
     </div>
 
@@ -181,15 +207,17 @@
         <p class="h4 fw-bolder mx-4 mt-2 mb-lg-2 mb-0">Kursus saya</p>
     </div>
 
-    <div class="content-bg d-lg-flex d-flex mx-lg-4 mx-2">
+    <div class="content-bg d-lg-flex d-flex mx-lg-4 mx-2 pt-2 pb-4">
         <div class="card mx-4 d-lg-flex rounded-4">
             <div class="card-bg p-lg-4 p-2 d-flex flex-row rounded-4">
                 <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Jorgy.png?csf=1&web=1&e=zYQmPE"
                     alt="" class="col-lg-2 col-6 pe-4">
-                <div class="col-8">
+                <div class="col-lg-8 col-6">
                     <p class="h4 fw-bolder my-1">Bahasa Inggris</p>
                     <hr class="my-1 w-75">
-                    <p class="h5 my-1">Mr. Jorgy Ferdinand</p>
+                    <a href="tutor_detail.html" class="nav-link">
+                        <p class="h5 my-1">Mr. Jorgy Ferdinand</p>
+                    </a>
                     <br>
                     <p class="h5 mt-1 fw-bolder">Status</p>
                     <p class="h6 mt-1">Menunggu Pembayaran</p>
@@ -198,15 +226,17 @@
         </div>
     </div>
 
-    <div class="content-bg d-lg-flex d-flex mx-lg-4 mx-2 pt-4">
+    <div class="content-bg d-lg-flex d-flex mx-lg-4 mx-2 pb-4">
         <div class="card mx-4 d-lg-flex rounded-4">
             <div class="card-bg p-lg-4 p-2 d-flex flex-row mb-0 rounded-4">
                 <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Jorgy.png?csf=1&web=1&e=zYQmPE"
                     alt="" class="col-lg-2 col-6 pe-4">
-                <div class="col-8">
+                <div class="col-lg-8 col-6">
                     <p class="h4 fw-bolder my-1">Bahasa Inggris</p>
                     <hr class="my-1 w-75">
-                    <p class="h5 my-1">Mr. Jorgy Ferdinand</p>
+                    <a href="tutor_detail.html" class="nav-link">
+                        <p class="h5 my-1">Mr. Jorgy Ferdinand</p>
+                    </a>
                     <br>
                     <p class="h5 mt-1 fw-bolder">Status</p>
                     <p class="h6 mt-1">Menunggu Pembayaran</p>

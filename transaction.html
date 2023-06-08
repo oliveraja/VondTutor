@@ -15,7 +15,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
     <!--Include Css-->
-    <link rel="stylesheet" href="like.css">
+    <link rel="stylesheet" href="transaction.css">
 
 </head>
 
@@ -127,39 +127,58 @@
     <section class="container-fluid mx-lg-4 d-sm-center">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <a class="breadcrumb-item nav-link bread-nav" aria-current="page" href=home.html>Halaman utama</a>
-                <li class="breadcrumb-item active disable" aria-current="page">Guru yang disukai</li>
+                <a class="breadcrumb-item nav-link bread-nav" aria-current="page" href="home.html">Halaman utama</a>
+                <a class="breadcrumb-item nav-link bread-nav" aria-current="page" href="info_akun.html">Info akun</a>
+                <li class="breadcrumb-item active disable" aria-current="page">Detail transaksi</li>
             </ol>
         </nav>
     </section>
 
-    <!--content-->
-    <div class="content-bg d-lg-flex d-flex mx-lg-2 mx-0 pt-lg-4 pt-2">
-        <div class="card mx-lg-4 mx-2 d-lg-flex rounded-4">
-            <div class="card-bg p-lg-4 p-2 d-flex flex-row mb-0 rounded-4">
-                <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Jorgy.png?csf=1&web=1&e=zYQmPE"
-                    alt="" class="col-lg-2 col-6 pe-4">
-                <div class="col-8">
-                    <p class="h4 fw-bolder my-1">Bahasa Inggris</p>
-                    <hr class="my-1 w-75">
-                    <p class="h5 my-1">Mr. Jorgy Ferdinand</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="content-bg d-lg-flex d-flex mx-lg-2 mx-0 pt-lg-4 pt-2">
-        <div class="card mx-lg-4 mx-2 d-lg-flex rounded-4">
-            <div class="card-bg p-lg-4 p-2 d-flex flex-row mb-0 rounded-4">
-                <img src="https://binusianorg-my.sharepoint.com/personal/david_alvyn_binus_ac_id/Documents/Source%20SE/Jorgy.png?csf=1&web=1&e=zYQmPE"
-                    alt="" class="col-lg-2 col-6 pe-4">
-                <div class="col-8">
-                    <p class="h4 fw-bolder my-1">Bahasa Inggris</p>
-                    <hr class="my-1 w-75">
-                    <p class="h5 my-1">Mr. Jorgy Ferdinand</p>
-                </div>
-            </div>
-        </div>
+    <!--Content-->
+    <div class="mx-lg-4 mx-2">
+        <p class="h4 fw-bolder mb-3">Detail transaksi</p>
+        <pre class="h4 mb-2">Tanggal        : 14-03-2023</pre>
+        <pre class="h4 mb-2">Jam            : 14.57 WIB</pre>
+        <pre class="h4 mb-2">Order ID       : ING-68573N78G4</pre>
+        <br>
+        <pre class="h4 mb-2">Diorder oleh   : Timothy Roland</pre>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Tanggal</th>
+                    <th scope="col">Voucher</th>
+                    <th scope="col">Jumlah</th>
+                    <th scope="col">Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Bahasa Inggris</th>
+                    <td>14-03-2023</td>
+                    <td>Jorgy100</td>
+                    <td>1</td>
+                    <td>675.000</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td>Voucher</td>
+                    <td>100.000</td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td>575.000</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <button class="btn mod-btn button float-end">
+            <a href="payment.html" class="nav-link">Bayar</a></button>
     </div>
 
     <!--Include bootstrap-->
