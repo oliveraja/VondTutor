@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-image: url('Source SE/Bg-page.png');
+    background-size: cover;
+}
+
+@media (max-width: 576px) {
+    .h2 {
+        font-size: 1rem;
+    }
+
+    .h4 {
+        font-size: 0.8rem;
+    }
+
+    .h5 {
+        font-size: 0.7rem;
+    }
+
+    .h6 {
+        font-size: 0.6rem;
+    }
+
+    hr {
+        margin: 0;
+    }
+
+    .profile-btn {
+        font-size: small;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-btn {
+        width: 60%;
+    }
+
+    .search {
+        font-size: 12px;
+    }
+}
+
+.navbar {
+    background-color: #EAFDFC;
+}
+
+.btn-group {
+    background-color: #D2F3F6;
+}
+
+.search {
+    margin-right: 2em;
+    font-size: 1em;
+}
+
+.navigation {
+    font-size: 12px;
+}
+
+select {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+
+.mod-btn {
+    border: 0;
+}
+
+.mod-btn:hover {
+    opacity: 80%;
+}
+
+.header-btn {
+    border: 0;
+}
+
+.header-btn:hover {
+    opacity: 80%;
+}
+
+.nav2:hover {
+    background-color: #82AAE3;
+    border-radius: 2cm;
+}
+
+.list-group-item {
+    background-color: #EAFDFC;
+}
+
+.breadcrumb {
+    margin-top: 5rem;
+}
+
+.content {
+    margin-bottom: 2rem;
+}
+
+.content-bg {
+    background-color: #D2F3F6;
+}
+
+.image {
+    width: 100%;
+}
+
+.edit-motivation {
+    color: grey;
+}
+
+.edit-motivation:hover {
+    color: black;
+}
+
+.profile-btn {
+    width: 93%;
+    background-color: #82AAE3;
+    color: #fff;
+}
+
+.profile-btn:hover {
+    background-color: #92B5E8;
+    color: #fff;
+}
+
+.card-bg {
+    background-color: #91D8E4;
+}
+
+.card {
+    width: 100%;
+}
+
+.head-content {
+    background-image: url('Source SE/Group 84 (1).png');
+    background-size: cover;
+}
+
+.text-header {
+    margin-left: 5rem;
+    margin-top: 20rem;
+}
+
+.btn-head-content {
+    background-color: #82AAE3;
+    width: 50%;
+    color: #fff;
+}
+
+.header-content-bg {
+    background-color: #D2F3F6;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.header-img {
+    width: 100%
+}
+
+.body-content {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.card-bg img {
+    width: 20%;
+}
+
+.cara-kerja img {
+    width: 50%;
+}
+
+.course-bg {
+    background-color: #91D8E4;
+}
+
+.button {
+    background-color: #82AAE3;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #92B5E8;
+    color: #fff;
+}
+
+.register input {
+    border: none;
+    outline: none;
+}
+
+.form-check input {
+    border-color: #000;
+    outline: #000;
+}
+
+.close-btn button {
+    margin-top: 1rem;
+    margin-left: 29rem;
+}
+
+.login {
+    background-color: #82AAE3;
+}
+
+.login:hover {
+    background-color: #92B5E8;
+}
+
+.register {
+    background-color: #D9D9D9;
+}
+
+.register:hover {
+    background-color: #f4f4f4;
+}
+
+.hover-btn {
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+.hover-btn:hover {
+    outline: none;
+    border: none;
+    opacity: 80%;
+}
