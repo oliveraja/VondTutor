@@ -41,14 +41,35 @@
                     <span class="search ms-3 mt-3 d-none d-lg-block">Subjek apa yang ingin anda pelajari?</span>
 
                     <!--Search onclick-->
+                    <!--Search onclick-->
                     <div class="input-group ps-2 py-2 d-none">
                         <img src="Source SE/Book.png" alt="">
                         <select class="form-select-sm p-0 m-0" aria-label="Default select example">
                             <option selected>Subjek</option>
-                            <option value="1">Bahasa Inggris</option>
-                            <option value="2">Bahasa Jepang</option>
-                            <option value="3">Bahasa Korea</option>
-                            <option value="4">Geografi</option>
+                            <option value="1">Akuntansi</option>
+                            <option value="2">Bahasa Indonesia</option>
+                            <option value="3">Bahasa Inggris</option>
+                            <option value="4">Bahasa Jepang</option>
+                            <option value="5">Bahasa Jerman</option>
+                            <option value="6">Bahasa Mandarin</option>
+                            <option value="7">Bahasa Prancis</option>
+                            <option value="8">Biologi</option>
+                            <option value="9">Dance</option>
+                            <option value="10">Ekonomi</option>
+                            <option value="11">Fisika</option>
+                            <option value="12">Geografi</option>
+                            <option value="13">Kimia</option>
+                            <option value="14">Komputer</option>
+                            <option value="15">Marketing</option>
+                            <option value="16">Matematika</option>
+                            <option value="17">Pancasila dan Kewarganegaraan</option>
+                            <option value="18">Psikologi</option>
+                            <option value="19">Sejarah</option>
+                            <option value="20">Seni Musik</option>
+                            <option value="21">Seni Rupa</option>
+                            <option value="22">Sosiologi</option>
+                            <option value="23">Statistika</option>
+                            <option value="24">Tari Kontemporer</option>
                         </select>
                         <img src="Source SE/Location.png" alt="">
                         <select class="form-select-sm p-0 m-0" aria-label="Default select example">
@@ -77,39 +98,27 @@
 
                     <!--Pesan-->
                     <li class="nav-item">
-                        <a class="mod-btn nav-link d-none d-lg-block" href="message.html">
+                        <a class="mod-btn nav-link d-none d-lg-block" data-bs-toggle="modal"
+                            data-bs-target="#modalLoginRegisterForm">
                             <img src="Source SE/Msg.png" alt="A" class="img-fluid">
                         </a>
                     </li>
 
                     <!--Love-->
                     <li class="nav-item">
-                        <a class="mod-btn nav-link d-none d-lg-block" href="like.html">
+                        <a class="mod-btn nav-link d-none d-lg-block" data-bs-toggle="modal"
+                            data-bs-target="#modalLoginRegisterForm">
                             <img src="Source SE/Love.png" alt="B" class="img-fluid">
                         </a>
                     </li>
 
                     <!--Info-->
                     <li class="nav-item">
-                        <a class="mod-btn nav-link d-none d-lg-block" href="info.html">
+                        <a class="mod-btn nav-link d-none d-lg-block" href="info_vondtutor.html">
                             <img src="Source SE/Info.png" alt="C" class="img-fluid">
                         </a>
                     </li>
 
-                    <!--Log out-->
-                    <li class="nav-item">
-                        <a class="mod-btn nav-link d-none d-lg-block" href="homepage.html">
-                            <img src="Source SE/LogOut.png" alt="D" class="img-fluid">
-                        </a>
-                    </li>
-                </ul>
-
-                <!--Menu navigasi (untuk tablet & mobile)-->
-                <ul class="navigation list-group list-group-flush d-lg-none d-flex">
-                    <a href="message.html" class="nav2 list-group-item nav-link">Pesan</a>
-                    <a href="like.html" class="nav2 list-group-item nav-link">Guru yang disukai</a>
-                    <a href="info.html" class="nav2 list-group-item nav-link">Info</a>
-                    <a href="homepage.html" class="nav2 list-group-item nav-link">Log out</a>
                 </ul>
             </div>
         </div>
@@ -119,132 +128,270 @@
         <!--Penanda halaman-->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <a class="breadcrumb-item nav-link bread-nav" aria-current="page" href="home.html">Halaman Utama</a>
+                <a class="breadcrumb-item nav-link bread-nav" aria-current="page" href="vondtutor.html">Halaman
+                    Utama</a>
                 <li class="breadcrumb-item disable" aria-current="page">Pelajaran</li>
             </ol>
         </nav>
     </section>
+    <!--Login/Register-->
+    <div class="modal fade" id="modalLoginRegisterForm" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog register">
+            <div class="modal-content">
+                <div class="close-btn">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body text-center mx-4">
+                    <img src="Source SE/LOGO.png" alt="">
+                    <br>
+                    <p class="h2">Masuk ke akun anda</p>
+                    <br>
+                    <br>
+                    <form>
+                        <div class="mb-3">
+                            <div class="d-flex border-bottom">
+                                <img src="Source SE/pngwing 5.png" alt="">
+                                <input type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex border-bottom">
+                                <img src="Source SE/pngwing 7.png" alt="">
+                                <input class="w-100" type="password" placeholder="Kata sandi">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <input type="checkbox" id="checkbox" name="Biarkan saya masuk" value="">
+                            <label for="checkbox">Biarkan saya masuk</label>
+                        </div>
+                        <div class="forgot nav-links">
+                            <p class="fw-bolder" data-bs-toggle="modal" data-bs-target="#forgot-password">
+                                Lupa kata sandi?</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn mod-btn login mx-4 mb-2 rounded-pill">Masuk</button>
+                <button class="btn mod-btn register mx-4 mb-2 rounded-pill">Daftar</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Lupa kata sandi-->
+    <div class="modal fade" id="forgot-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog register">
+            <div class="modal-content">
+                <div class="close-btn">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body text-center mx-4">
+                    <img src="Source SE/LOGO.png" alt="">
+                    <br>
+                    <p class="h2">Verifikasi Email</p>
+                    <br>
+                    <br>
+                    <form>
+                        <div class="mb-3">
+                            <div class="d-flex border-bottom">
+                                <img src="Source SE/pngwing 5.png" alt="">
+                                <input type="text" placeholder="Email">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <button class="btn mod-btn login mx-4 rounded-pill mb-2" data-bs-toggle="modal"
+                    data-bs-target="#change-password">Verifikasi</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Ubah kata sandi-->
+    <div class="modal fade" id="change-password" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog register">
+            <div class="modal-content">
+                <div class="close-btn">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body text-center mx-4">
+                    <img src="Source SE/LOGO.png" alt="">
+                    <br>
+                    <p class="h2">Ubah Kata Sandi</p>
+                    <br>
+                    <br>
+                    <form>
+                        <div class="d-flex border-bottom mb-3">
+                            <img src="Source SE/pngwing 7.png" alt="">
+                            <input class="w-100" type="password" placeholder="Kata sandi baru">
+                        </div>
+                        <div class="d-flex border-bottom mb-3">
+                            <img src="Source SE/pngwing 7.png" alt="">
+                            <input class="w-100" type="password" placeholder="Konfirmasi kata sandi">
+                        </div>
+                    </form>
+                </div>
+                <button class="btn mod-btn login mx-4 rounded-pill mb-2">
+                    <a class="nav-link" href="vondtutor.html">Ubah kata sandi</a>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <div class="container-fluid text-center">
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
+                    <img class="pt-3 rounded-5" src="Source SE/Akuntan.jpeg" alt="">
+                    <p class="h5 p-2">Akuntansi</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3 rounded-5" src="Source SE/Bahasa Indonesia.jpg" alt="">
+                    <p class="h5 p-2">Bahasa Indonesia</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3 rounded-5" src="Source SE/Inggris.jpg" alt="">
                     <p class="h5 p-2">Bahasa Inggris</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Bahasa Jepang.png" alt="">
+                    <p class="h5 p-2">Bahasa Jepang</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Bahasa Jerman.jpeg" alt="">
+                    <p class="h5 p-2">Bahasa Jerman</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Mandarin.png" alt="">
+                    <p class="h5 p-2">Bahasa Mandarin</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Bahasa Prancis.jpeg" alt="">
+                    <p class="h5 p-2">Bahasa Prancis</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Biologi.png" alt="">
+                    <p class="h5 p-2">Biologi</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Dance.jpg" alt="">
+                    <p class="h5 p-2">Dance</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Ekonomi.png" alt="">
+                    <p class="h5 p-2">Ekonomi</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Fisika.png" alt="">
+                    <p class="h5 p-2">Fisika</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Geografi.png" alt="">
+                    <p class="h5 p-2">Geografi</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Kimia.png" alt="">
+                    <p class="h5 p-2">Kimia</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Komputer.png" alt="">
+                    <p class="h5 p-2">Komputer</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Marketing.png" alt="">
+                    <p class="h5 p-2">Marketing</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Matematika.png" alt="">
+                    <p class="h5 p-2">Matematika</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Olahraga.png" alt="">
+                    <p class="h5 p-2">Olahraga</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Indonesia.png" alt="">
+                    <p class="h5 p-2">Pancasila dan Kewarganegaraan</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Psikologi.jpeg" alt="">
+                    <p class="h5 p-2">Psikologi</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Sejarah.jpeg" alt="">
+                    <p class=" h5 p-2">Sejarah</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Seni musik.jpg" alt="">
+                    <p class="h5 p-2">Seni Musik</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3 rounded-5" src="Source SE/Seni Rupa.png" alt="">
+                    <p class="h5 p-2">Seni Rupa</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3" src="Source SE/Rectangle 80.png" alt="">
-                    <p class="h5 p-2">Bahasa Inggris</p>
+                    <img class="pt-3 rounded-5" src="Source SE/Sosiologi.png" alt="">
+                    <p class="h5 p-2">Sosiologi</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3" src="Source SE/Statistika.jpeg" alt="">
+                    <p class="h5 p-2">Statistika</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3 rounded-5" src="Source SE/Kontemporer.jpeg" alt="">
+                    <p class="h5 p-2">Tari Kontemporer</p>
                 </div>
             </div>
         </div>

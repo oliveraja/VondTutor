@@ -72,37 +72,10 @@
                         <img src="Source SE/Search.png" alt="">
                     </a>
                 </div>
-
-                <!--Menu navigasi-->
-                <ul class="nav justify-content">
-
-                    <!--Pesan-->
-                    <li class="nav-item">
-                        <a class="mod-btn nav-link d-none d-lg-block" data-bs-toggle="modal"
-                            data-bs-target="#modalLoginRegisterForm">
-                            <img src="Source SE/Msg.png" alt="A" class="img-fluid">
-                        </a>
-                    </li>
-
-                    <!--Love-->
-                    <li class="nav-item">
-                        <a class="mod-btn nav-link d-none d-lg-block" data-bs-toggle="modal"
-                            data-bs-target="#modalLoginRegisterForm">
-                            <img src="Source SE/Love.png" alt="B" class="img-fluid">
-                        </a>
-                    </li>
-
-                    <!--Info-->
-                    <li class="nav-item">
-                        <a class="mod-btn nav-link d-none d-lg-block" href="info_vondtutor.html">
-                            <img src="Source SE/Info.png" alt="C" class="img-fluid">
-                        </a>
-                    </li>
-                </ul>
-
             </div>
         </div>
     </nav>
+
 
     <!--Upgrade Skill-->
     <div class="head-content">
@@ -118,8 +91,6 @@
                     data-bs-target="#modalLoginRegisterForm">
                     Daftar
                 </button>
-
-                <!--Login/register-->
                 <div class="modal fade" id="modalLoginRegisterForm" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog register">
@@ -139,13 +110,13 @@
                                     <div class="mb-3">
                                         <div class="d-flex border-bottom">
                                             <img src="Source SE/pngwing 5.png" alt="">
-                                            <input type="text" placeholder="Email">
+                                            <input type="text" placeholder="Email" id="inputemail">
                                         </div>
                                     </div>
                                     <div class="mb-3">
                                         <div class="d-flex border-bottom">
                                             <img src="Source SE/pngwing 7.png" alt="">
-                                            <input class="w-100" type="password" placeholder="Kata sandi">
+                                            <input type="text" placeholder="Password" id="inputpassword">
                                         </div>
                                     </div>
                                 </form>
@@ -154,82 +125,81 @@
                                         <input type="checkbox" id="checkbox" name="Biarkan saya masuk" value="">
                                         <label for="checkbox">Biarkan saya masuk</label>
                                     </div>
-                                    <div class="forgot nav-link">
-                                        <p class="fw-bolder" data-bs-toggle="modal" data-bs-target="#forgot-password">
-                                            Lupa kata sandi?</p>
+                                    <div>
+                                        <p class="fw-bolder">Lupa kata sandi?</p>
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn mod-btn login mx-4 mb-2 rounded-pill" href="home.html">
-                                <a class="nav-link" href="home.html">Masuk</a>
-                            </button>
-                            <button class="btn mod-btn register mx-4 mb-2 rounded-pill"><a class="nav-link"
-                                    href="#">Daftar</a></button>
-                        </div>
-                    </div>
-                </div>
+                            <button class="btn mod-btn login mx-4 mb-2 rounded-pill">Masuk</button>
+                             <!-- Cek apakah email & pw sudah diisi -->
+                           <script type="text/javascript">
+                                function validasi() {
+                                    var username = document.getElementById("inputemail").value;
+                                    var password = document.getElementById("inputpassword").value;		
+                                    if (username != "" && password!="") {
+                                        return true;
+                                    }else{
+                                        alert('Username dan Password harus di isi !');
+                                        return false;
+                                    }
+                                }
+                            
+                            </script> 
+                           <?php
+                                require_once "connection.php";
 
-                <!--Lupa kata sandi-->
-                <div class="modal fade" id="forgot-password" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog register">
-                        <div class="modal-content">
-                            <div class="close-btn">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
+                                if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                                    $inputemail = $_POST['email'];
+                                    $inputpassword = $_POST['password'];
 
-                            <div class="modal-body text-center mx-4">
-                                <img src="Source SE/LOGO.png" alt="">
-                                <br>
-                                <p class="h2">Verifikasi Email</p>
-                                <br>
-                                <br>
-                                <form>
-                                    <div class="mb-3">
-                                        <div class="d-flex border-bottom">
-                                            <img src="Source SE/pngwing 5.png" alt="">
-                                            <input type="text" placeholder="Email">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <button class="btn mod-btn login mx-4 rounded-pill mb-2" data-bs-toggle="modal"
-                                data-bs-target="#change-password">Verifikasi</button>
-                        </div>
-                    </div>
-                </div>
+                                    // Create a new MySQLi connection
+                                    $conn = mysqli_connect($databaseHost, $databaseUsername, $databasePassword, $databaseName);
 
-                <!--Ubah kata sandi-->
-                <div class="modal fade" id="change-password" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog register">
-                        <div class="modal-content">
-                            <div class="close-btn">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
+                                    // Check if the connection was successful
+                                    if (mysqli_connect_errno()) {
+                                        die("Connection failed: " . mysqli_connect_error());
+                                    }
 
-                            <div class="modal-body text-center mx-4">
-                                <img src="Source SE/LOGO.png" alt="">
-                                <br>
-                                <p class="h2">Ubah Kata Sandi</p>
-                                <br>
-                                <br>
-                                <form>
-                                    <div class="d-flex border-bottom mb-3">
-                                        <img src="Source SE/pngwing 7.png" alt="">
-                                        <input class="w-100" type="password" placeholder="Kata sandi baru">
-                                    </div>
-                                    <div class="d-flex border-bottom mb-3">
-                                        <img src="Source SE/pngwing 7.png" alt="">
-                                        <input class="w-100" type="password" placeholder="Konfirmasi kata sandi">
-                                    </div>
-                                </form>
+                                    // Prepare the query using prepared statements to prevent SQL injection
+                                    $stmt = $conn->prepare("SELECT * FROM login WHERE username = ? AND password = ?");
+                                    $stmt->bind_param("ss", $inputemail, $inputpassword);
+                                    $stmt->execute();
+
+                                    // Get the result
+                                    $result = $stmt->get_result();
+                                    $cek = $result->num_rows;
+
+                                    if ($cek > 0) {
+                                        session_start();
+                                        $_SESSION['email '] = $inputemail;
+                                        $_SESSION['status'] = "login";
+                                        header("location: vondtutor/home.php");
+                                        exit(); // Add an exit() after the header() to stop further execution
+                                    } else {
+                                        $error = "Login failed. Invalid email or password.";// Add an exit() after the header() to stop further execution
+                                    }
+
+                                    // Close the statement and connection
+                                    $stmt->close();
+                                    $conn->close();
+                                }
+                                ?>
+
+                            <?php 
+                                if (isset($error)) { ?>
+                                    <p><?php echo $error; ?></p>
+                                <?php } ?>
+
+                            <button class="btn mod-btn register mx-4 mb-2 rounded-pill">Daftar</button>
+                            <p class="h6 mb-2 text-center">atau</p>
+                            <div class="mx-3">
+                                <button class="hover-btn">
+                                    <img class="img-fluid mb-1 w-100" src="Source SE/Group 89.png" alt="">
+                                </button>
+                                <button class="hover-btn">
+                                    <img class="img-fluid mb-1" src="Source SE/Group 90.png" alt="">
+                                </button>
                             </div>
-                            <button class="btn mod-btn login mx-4 rounded-pill mb-2">
-                                <a class="nav-link" href="vondtutor.html">Ubah kata sandi</a>
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -248,8 +218,7 @@
                     <p class="h3 pt-4 pe-5 mb-3">VOND TUTOR adalah tempat yang tepat untuk mencari guru privat yang
                         berkulitas.
                         Kami
-                        memiliki guru yang berpengalaman dan berkualifikasi tinggi dalam berbagai mata pelajaran.
-                    </p>
+                        memiliki guru yang berpengalaman dan berkualifikasi tinggi dalam berbagai mata pelajaran. </p>
                     <img class="mb-3" src="Source SE/Group 85.png" alt="">
                     <img class="mb-3" src="Source SE/Group 86.png" alt="">
                     <img class="mb-3" src="Source SE/Group 87.png" alt="">
@@ -263,95 +232,91 @@
     <!--Ulasan-->
     <div class="body-content">
         <p class="h4 fw-bolder pt-2">Ulasan Tentang VOND TUTOR</p>
-        <div class="d-flex gap-2 mb-2 justify-content-center">
-
-            <!--Ulasan-1-->
-            <div class="g-col-4 col-4 card-bg rounded-3 ulasan">
+        <div class="d-flex gap-2 mb-2">
+            <div class="g-col-4 card-bg rounded-3">
                 <div class="d-flex align-items-center p-2">
-                    <img class="rounded-circle" src="Source SE/Ulasan-1.png" alt="">
+                    <img class="rounded-circle" src="Source SE/Adrian.png" alt="">
                     <div class="px-3">
                         <p class="h6">Adrian</p>
                         <p class="h6">4.5/5</p>
                     </div>
                 </div>
-                <p class="h6 px-2 pb-2">
-                    Semenjak mendapatkan guru dari VOND TUTOR saya jadi lebih memahami materi pembelajaran saya dan
+                <p class="h6 ps-2 pb-2">
+                    Semenjak mendapatkan guru dari VOUND TUTOR saya jadi lebih memahami materi pembelajaran saya dan
                     saya
                     bisa mendapatkan nilai yang memuaskan sangat ujian
                 </p>
             </div>
-
-            <!--Ulasan-2-->
-            <div class="g-col-4 col-4 card-bg rounded-3 ulasan">
+            <div class="g-col-4 card-bg rounded-3">
                 <div class="d-flex align-items-center p-2">
-                    <img class="rounded-circle" src="Source SE/Ulasan-2.jpeg" alt="">
+                    <img class="rounded-circle" src="Source SE/Adrian.png" alt="">
                     <div class="px-3">
-                        <p class="h6">Joko Ronaldo</p>
-                        <p class="h6">4.9/5</p>
-                    </div>
-                </div>
-                <p class="h6 px-2 pb-2">
-                    VOND Tutor memudahkan saya untuk bisa memahami pelajaran yang ada di sekolah
-                </p>
-            </div>
-
-            <!--Ulasan-3-->
-            <div class="g-col-4 col-4 card-bg rounded-3 ulasan">
-                <div class="d-flex align-items-center p-2">
-                    <img class="rounded-circle" src="Source SE/Ulasan-3.jpeg" alt="">
-                    <div class="px-3">
-                        <p class="h6">Maharaja Seno</p>
-                        <p class="h6">4.7/5</p>
-                    </div>
-                </div>
-                <p class="h6 px-2 pb-2">
-                    Saya sangat suka VOND TUTOR, nilai saya menjadi bagus berkat VOND TUTOR.
-                </p>
-            </div>
-        </div>
-
-        <div class="d-flex gap-2 mb-2 justify-content-center">
-            <!--Ulasan-4-->
-            <div class="g-col-4 col-4 card-bg rounded-3 ulasan">
-                <div class="d-flex align-items-center p-2">
-                    <img class="rounded-circle" src="Source SE/Ulasan-4.jpeg" alt="">
-                    <div class="px-3">
-                        <p class="h6">Dena Mahadewi</p>
-                        <p class="h6">4.4/5</p>
-                    </div>
-                </div>
-                <p class="h6 px-2 pb-2">
-                    Saya akan merekomendasikan VOND TUTOR ke teman saya. VOND TUTOR sangat keren. Terima kasih VOND
-                    TUTOR.
-                </p>
-            </div>
-
-            <!--Ulasan-5-->
-            <div class="g-col-4 col-4 card-bg rounded-3 ulasan">
-                <div class="d-flex align-items-center p-2">
-                    <img class="rounded-circle" src="Source SE/Ulasan-5.jpeg" alt="">
-                    <div class="px-3">
-                        <p class="h6">Brando Sanjaya</p>
+                        <p class="h6">Adrian</p>
                         <p class="h6">4.5/5</p>
                     </div>
                 </div>
-                <p class="h6 px-2 pb-2">
-                    Awalnya saya merasa tidak yakin untuk mencoba VOND TUTOR. Setelah saya mencoba, saya sangat senang
-                    karena VOND TUTOR memiliki tutor yang sangat sabar dan cara mengajarnya pun keren.
+                <p class="h6 ps-2 pb-2">
+                    Semenjak mendapatkan guru dari VOUND TUTOR saya jadi lebih memahami materi pembelajaran saya dan
+                    saya
+                    bisa mendapatkan nilai yang memuaskan sangat ujian
                 </p>
             </div>
-
-            <!--Ulasan-6-->
-            <div class="g-col-4 col-4 card-bg rounded-3 ulasan">
+            <div class="g-col-4 card-bg rounded-3">
                 <div class="d-flex align-items-center p-2">
-                    <img class="rounded-circle" src="Source SE/Ulasan-6.jpeg" alt="">
+                    <img class="rounded-circle" src="Source SE/Adrian.png" alt="">
                     <div class="px-3">
-                        <p class="h6">Anita Sulianti</p>
-                        <p class="h6">4.8/5</p>
+                        <p class="h6">Adrian</p>
+                        <p class="h6">4.5/5</p>
                     </div>
                 </div>
-                <p class="h6 px-2 pb-2">
-                    VOND TUTOR jaya jaya jaya
+                <p class="h6 ps-2 pb-2">
+                    Semenjak mendapatkan guru dari VOUND TUTOR saya jadi lebih memahami materi pembelajaran saya dan
+                    saya
+                    bisa mendapatkan nilai yang memuaskan sangat ujian
+                </p>
+            </div>
+        </div>
+        <div class="d-flex gap-2 mb-2">
+            <div class="g-col-4 card-bg rounded-3">
+                <div class="d-flex align-items-center p-2">
+                    <img class="rounded-circle" src="Source SE/Adrian.png" alt="">
+                    <div class="px-3">
+                        <p class="h6">Adrian</p>
+                        <p class="h6">4.5/5</p>
+                    </div>
+                </div>
+                <p class="h6 ps-2 pb-2">
+                    Semenjak mendapatkan guru dari VOUND TUTOR saya jadi lebih memahami materi pembelajaran saya dan
+                    saya
+                    bisa mendapatkan nilai yang memuaskan sangat ujian
+                </p>
+            </div>
+            <div class="g-col-4 card-bg rounded-3">
+                <div class="d-flex align-items-center p-2">
+                    <img class="rounded-circle" src="Source SE/Adrian.png" alt="">
+                    <div class="px-3">
+                        <p class="h6">Adrian</p>
+                        <p class="h6">4.5/5</p>
+                    </div>
+                </div>
+                <p class="h6 ps-2 pb-2">
+                    Semenjak mendapatkan guru dari VOUND TUTOR saya jadi lebih memahami materi pembelajaran saya dan
+                    saya
+                    bisa mendapatkan nilai yang memuaskan sangat ujian
+                </p>
+            </div>
+            <div class="g-col-4 card-bg rounded-3">
+                <div class="d-flex align-items-center p-2">
+                    <img class="rounded-circle" src="Source SE/Adrian.png" alt="">
+                    <div class="px-3">
+                        <p class="h6">Adrian</p>
+                        <p class="h6">4.5/5</p>
+                    </div>
+                </div>
+                <p class="h6 ps-2 pb-2">
+                    Semenjak mendapatkan guru dari VOUND TUTOR saya jadi lebih memahami materi pembelajaran saya dan
+                    saya
+                    bisa mendapatkan nilai yang memuaskan sangat ujian
                 </p>
             </div>
         </div>
@@ -376,61 +341,61 @@
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3 rounded-5" src="Source SE/Inggris.jpg" alt="">
+                    <img class="pt-3" src="Source SE/Inggris.jpg" alt="">
                     <p class="h5 p-2">Bahasa Inggris</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3 rounded-5" src="Source SE/Mandarin.png" alt="">
-                    <p class="h5 p-2">Bahasa Mandarin</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="course-bg rounded-5">
-                    <img class="pt-3 rounded-5" src="Source SE/Biologi.png" alt="">
-                    <p class="h5 p-2">Biologi</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="course-bg rounded-5">
-                    <img class="pt-3 rounded-5" src="Source SE/Fisika.png" alt="">
-                    <p class="h5 p-2">Fisika</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="course-bg rounded-5">
-                    <img class="pt-3 rounded-5" src="Source SE/Kimia.png" alt="">
-                    <p class="h5 p-2">Kimia</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="course-bg rounded-5">
-                    <img class="pt-3 rounded-5" src="Source SE/Komputer.png" alt="">
-                    <p class="h5 p-2">Komputer</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="course-bg rounded-5">
-                    <img class="pt-3 rounded-5" src="Source SE/Matematika.png" alt="">
-                    <p class="h5 p-2">Matematika</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="course-bg rounded-5">
-                    <img class="pt-3 rounded-5" src="Source SE/Olahraga.png" alt="">
-                    <p class="h5 p-2">Olahraga</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="course-bg rounded-5">
-                    <img class="pt-3 rounded-5" src="Source SE/Indonesia.png" alt="">
+                    <img class="pt-3" src="Source SE/Indonesia.png" alt="">
                     <p class="h5 p-2">Pancasila dan Kewarganegaraan</p>
                 </div>
             </div>
             <div class="col">
                 <div class="course-bg rounded-5">
-                    <img class="pt-3 rounded-5" src="Source SE/Sosiologi.png" alt="">
+                    <img class="pt-3" src="Source SE/Mandarin.png" alt="">
+                    <p class="h5 p-2">Bahasa Mandarin</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3" src="Source SE/Matematika.png" alt="">
+                    <p class="h5 p-2">Matematika</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3" src="Source SE/Biologi.png" alt="">
+                    <p class="h5 p-2">Biologi</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3" src="Source SE/Kimia.png" alt="">
+                    <p class="h5 p-2">Kimia</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3" src="Source SE/Fisika.png" alt="">
+                    <p class="h5 p-2">Fisika</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3" src="Source SE/Komputer.png" alt="">
+                    <p class="h5 p-2">Komputer</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3" src="Source SE/Olahraga.png" alt="">
+                    <p class="h5 p-2">Olahraga</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="course-bg rounded-5">
+                    <img class="pt-3" src="Source SE/Sosiologi.png" alt="">
                     <p class="h5 p-2">Sosiologi</p>
                 </div>
             </div>

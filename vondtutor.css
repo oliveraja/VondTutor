@@ -175,6 +175,7 @@ select {
 
 .course-bg {
     background-color: #91D8E4;
+    height: 320px;
 }
 
 .button {
@@ -228,4 +229,23 @@ select {
     outline: none;
     border: none;
     opacity: 80%;
+}
+
+.forgot:hover {
+    opacity: 80%;
+}
+
+.ulasan img {
+    width: 70px;
+    height: 70px;
+}
+
+.course-bg img {
+    width: 250px;
+    height: 250px;
+}
+
+.course-size {
+    width: 250px;
+    height: 250px;
 }
